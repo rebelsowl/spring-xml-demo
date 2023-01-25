@@ -1,8 +1,0 @@
-org\example\config\WebConfig.class
-org\example\data\model\dao\UserDao.class
-org\example\service\Impl\UserServiceImpl.class
-org\example\data\model\entity\UserEntity.class
-org\example\service\UserService.class
-org\example\controller\UserController.class
-org\example\config\HibernateConfig.class
-org\example\data\model\dto\UserDto.class
