@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "24349120-25cf-49e7-9613-a2fdbd73be8c",
+		"name": "spring-xml-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8742474"
+	},
+	"item": [
+		{
+			"name": "hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/spring_xml_demo_war/hello"
+			},
+			"response": []
+		},
+		{
+			"name": "all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/spring_xml_demo_war/users"
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/spring_xml_demo_war/user/1"
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"asdf\",\r\n    \"lastName\" : \"bcd\",\r\n    \"email\" : \"asdf@mail.com\"\r\n\r\n}"
+				},
+				"url": "http://localhost:8080/spring_xml_demo_war/user"
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 6,\r\n    \"firstName\" : \"asdf\",\r\n    \"lastName\" : \"bcd\",\r\n    \"email\" : \"asdf@mail.com\"\r\n\r\n}"
+				},
+				"url": "http://localhost:8080/spring_xml_demo_war/user"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/spring_xml_demo_war/user/1"
+			},
+			"response": []
+		}
+	]
+}
